@@ -784,6 +784,12 @@ iana_registry! {
         CNonce: 39,
         /// The expiration time of a token measured from when it was received at the RS in seconds ("exi": int)
         Exi: 40,
+        /// Reference to a status or validity mechanism containing up-to-date status information on the CWT.
+        Status: 65535,
+        /// A status list containing up-to-date status information on multiple tokens
+        StatusList: 65533,
+        /// Time to Live
+        Ttl: 65534,
     }
 }
 
