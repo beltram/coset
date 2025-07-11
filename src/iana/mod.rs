@@ -1049,6 +1049,12 @@ iana_registry! {
         PsaSoftwareComponents: 2399,
         /// PSA Verification Service Indicator ("N/A": text string)
         PsaVerificationServiceIndicator: 2400,
+        /// Reference to a status or validity mechanism containing up-to-date status information on the CWT.
+        Status: 65535,
+        /// A status list containing up-to-date status information on multiple tokens
+        StatusList: 65533,
+        /// Time to Live
+        Ttl: 65534,
     }
 }
 
