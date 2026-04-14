@@ -18,9 +18,18 @@ default = []
 # `core::error::Error` impl.
 std = []
 
-[dependencies]
-ciborium = { version = "^0.2.1", default-features = false }
-ciborium-io = { version = "^0.2.0", features = ["alloc"] }
+[dependencies.ciborium]
+git = "https://github.com/beltram/ciborium"
+branch = "simple-value+cde"
+default-features = false
+#path = "../ciborium/ciborium"
+
+[dependencies.ciborium-io]
+git = "https://github.com/beltram/ciborium"
+branch = "simple-value+cde"
+default-features = false
+features = ["alloc"]
+#path = "../ciborium/ciborium-io"
 
 [dev-dependencies]
 hex = "^0.4.2"
